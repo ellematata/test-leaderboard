@@ -1,0 +1,16 @@
+user_id,name,password,DOB,location
+1,Alice Johnson,pass1234,1995-04-23,New York
+2,Ben Tran,secure456,1988-11-12,San Francisco
+3,Clara Liu,abc123xyz,1992-07-08,Chicago
+4,David Kim,mypassword,1990-01-16,Los Angeles
+5,Eva Patel,eva2020,1998-05-30,Houston
+6,Frank Wilson,frankie01,1985-09-09,Phoenix
+7,Grace Lee,gracepass,1993-12-02,Philadelphia
+8,Henry Adams,qwerty789,1989-06-14,San Diego
+9,Isabella Chen,bella123,1996-03-21,Dallas
+10,Jack Nguyen,jackjack,1991-08-19,Austin
+11,Karen Smith,karen!321,1994-10-10,San Jose
+12,Leo Martinez,leo2022,1987-02-27,Seattle
+13,Mia Robinson,miarob,1999-11-03,Denver
+14,Nathan Scott,natescott,1990-07-17,Atlanta
+15,Olivia Brown,oliveb,1997-01-05,Boston

@@ -1,0 +1,276 @@
+/* create-playlist.css - Styles for the create playlist page */
+
+.create-playlist-container {
+    padding: 2rem;
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+  }
+  
+  .create-playlist-header {
+    margin-bottom: 2rem;
+  }
+  
+  .create-playlist-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-600);
+    font-family: 'Quicksand', var(--font-sans);
+  }
+  
+  .create-playlist-subtitle {
+    color: var(--neutral-500);
+    font-size: 1.1rem;
+  }
+  
+  .create-playlist-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .create-playlist-grid {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  
+  .playlist-details-card {
+    height: fit-content;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-700);
+  }
+  
+  .playlist-cover-preview {
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--neutral-100);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid var(--neutral-200);
+  }
+  
+  .playlist-cover-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .playlist-cover-icon {
+    color: var(--neutral-400);
+  }
+  
+  .playlist-cover-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-input-wrapper {
+    position: relative;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--neutral-400);
+    pointer-events: none;
+  }
+  
+  .search-input {
+    padding-left: 2.5rem;
+  }
+  
+  .search-results {
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  
+  .search-results-empty {
+    background-color: var(--neutral-50);
+    padding: 1rem;
+    text-align: center;
+    color: var(--neutral-500);
+    border-radius: var(--border-radius-md);
+  }
+  
+  .songs-table {
+    width: 100%;
+  }
+  
+  .songs-table th {
+    background-color: var(--neutral-50);
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    color: var(--neutral-600);
+    border-bottom: 1px solid var(--neutral-200);
+    text-align: left;
+  }
+  
+  .songs-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--neutral-200);
+  }
+  
+  .songs-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .songs-table tr:hover {
+    background-color: var(--neutral-50);
+  }
+  
+  .song-action-btn {
+    background: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--neutral-500);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .song-action-btn:hover {
+    background-color: var(--primary-50);
+    color: var(--primary-600);
+  }
+  
+  .remove-btn:hover {
+    color: var(--accent-red);
+    background-color: rgba(239, 68, 68, 0.1);
+  }
+  
+  .note-btn.has-note {
+    color: var(--accent-green);
+  }
+  
+  .note-btn.has-note:hover {
+    background-color: rgba(16, 185, 129, 0.1);
+  }
+  
+  .playlist-songs-empty {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .playlist-songs-empty-icon {
+    color: var(--neutral-300);
+    margin-bottom: 1rem;
+  }
+  
+  .playlist-songs-empty-text {
+    color: var(--neutral-500);
+  }
+  
+  /* Note Dialog */
+  .note-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .note-dialog {
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 28rem;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .note-dialog-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-800);
+  }
+  
+  .note-dialog-subtitle {
+    font-size: 0.875rem;
+    color: var(--neutral-500);
+    margin-bottom: 1rem;
+  }
+  
+  .note-dialog-textarea {
+    width: 100%;
+    min-height: 6rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid var(--neutral-300);
+    border-radius: var(--border-radius-md);
+    resize: vertical;
+  }
+  
+  .note-dialog-textarea:focus {
+    outline: none;
+    border-color: var(--primary-400);
+    box-shadow: 0 0 0 3px var(--primary-100);
+  }
+  
+  .note-dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+  
+  .note-dialog-cancel {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-md);
+    background-color: white;
+    border: 1px solid var(--neutral-300);
+    color: var(--neutral-700);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .note-dialog-cancel:hover {
+    background-color: var(--neutral-100);
+  }
+  
+  .note-dialog-save {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-md);
+    background-color: var(--primary-500);
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .note-dialog-save:hover {
+    background-color: var(--primary-600);
+  }
